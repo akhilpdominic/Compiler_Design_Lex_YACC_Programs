@@ -18,7 +18,7 @@ While programming in lex and yacc, we would give the lex program as an input to 
 # Compiling lex and yacc programs
 
 - Write the lex program and save it as '*file_name*.lex'
-- Inorder to compile the lex program, type in **lex file_name.lex**
+- Inorder to compile the lex program, type in ***lex file_name.lex***
 - Now you would get a file named '*lex.yy.c*' in the current working directory
-- Compile the *lex.yy.c* file using **gcc lex.yy.c**
-- Use **./a.out** to run the program
+- Compile the *lex.yy.c* file using ***gcc lex.yy.c***
+- Use ***./a.out*** to run the program
