@@ -15,10 +15,17 @@ then be used to generate code or execute the input directly.
 While programming in lex and yacc, we would give the lex program as an input to the yacc program
 
 
-# Compiling lex and yacc programs
+## Compiling lex  programs
 
-- Write the lex program and save it as '*file_name*.lex'
-- Inorder to compile the lex program, type in ***lex file_name.lex***
+- Write the lex program and save it as '*file_name.l*'
+- Inorder to compile the lex program, type in ***lex file_name.l***
 - Now you would get a file named '*lex.yy.c*' in the current working directory
 - Compile the *lex.yy.c* file using ***gcc lex.yy.c***
 - Use ***./a.out*** to run the program
+
+## Compiling yacc programs
+
+- Write the yacc program and save the file as '*file_name.y*'
+- Now you would get a file named '*y.tab.c*' in the current working directory
+- To compile lex and yacc together, type ***gcc lex.yy.c y.tab.h -lfl***
+- Now type ***./a.out*** to run the program
